@@ -1,12 +1,11 @@
-
 import React, { useRef } from 'react'
 
 const PRODUCTS = [
-  { name: 'Chef’s Special', img: '/images/product2.jpg', price: 'KSh 1,200' },
-  { name: 'Bistro Plate', img: '/images/product3.jpg', price: 'KSh 3,200' },
-  { name: 'Bakery Box', img: '/images/product4.jpg', price: 'KSh 900' },
-  { name: 'Wine Selection', img: '/images/product5.jpg', price: 'KSh 450' },
-  { name: 'Dessert Set', img: '/images/product1.jpg', price: 'KSh 2,000' },
+  { name: "Chef’s Special", img: 'https://images.unsplash.com/photo-1543353071-087092ec393a?q=80&w=1200&auto=format&fit=crop', price: 'KSh 1,200' },
+  { name: 'Bistro Plate',    img: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop', price: 'KSh 3,200' },
+  { name: 'Bakery Box',      img: 'https://images.unsplash.com/photo-1517686469429-8a2f7f9b50f6?q=80&w=1200&auto=format&fit=crop', price: 'KSh 900' },
+  { name: 'Wine Selection',  img: 'https://images.unsplash.com/photo-1510627498534-cf7e9002facc?q=80&w=1200&auto=format&fit=crop', price: 'KSh 450' },
+  { name: 'Dessert Set',     img: 'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop', price: 'KSh 2,000' },
 ]
 
 export default function Products() {
@@ -31,7 +30,11 @@ export default function Products() {
         {PRODUCTS.map((p, i) => (
           <div className="product-card" key={i}>
             <div className="product-image">
-              <img src={p.img} alt={p.name} onError={(e)=>{e.currentTarget.src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop'}}/>
+              <img
+                src={p.img}
+                alt={p.name}
+                onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop' }}
+              />
             </div>
             <div className="product-info">
               <div className="product-name">{p.name}</div>
