@@ -41,3 +41,11 @@ The design combines **luxury 5-star appeal** with **local authenticity** — evo
 ### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/Nextofkins/mautamudelicacies.git
+
+```
+
+---
+
+### Vercel app Hosting
+```bash
+https://mautamudelicacies-723dtnw5t-alfred-njerus-projects.vercel.app
