@@ -40,5 +40,4 @@ The design combines **luxury 5-star appeal** with **local authenticity** — evo
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/your-username/mautamu-delicacies.git
-cd mautamu-delicacies
+git clone https://github.com/Nextofkins/mautamudelicacies.git
